@@ -23,10 +23,15 @@
 # 接線方式
 ![血氧](https://user-images.githubusercontent.com/40359899/227778216-cdd83eb2-a9d8-4ced-a4c1-eedbc5183757.jpg)
 MAX30102     ESP32       OLED
+
 GND	      ->  GDN   ->    GND
+
 SCK(SCL)  ->  22	  ->	  SCL
+
 SDA	      ->  21	  ->	  SDA
+
 VCC	      ->  3.3V  ->	  VDD
+
 
 # 程式範例
   1. 基礎範例01BasicRead.ino，修改於範例，能用波形呈現
