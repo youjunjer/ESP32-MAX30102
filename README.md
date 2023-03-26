@@ -30,8 +30,8 @@ VCC	      ->  3.3V  ->	  VDD
 
 # 程式範例
   1. 基礎範例01BasicRead.ino，修改於範例，能用波形呈現
-![image](https://user-images.githubusercontent.com/40359899/227778530-55c4b15b-6a7b-474d-87d7-c520d53ce013.png =800x600)
+![image](https://user-images.githubusercontent.com/40359899/227778530-55c4b15b-6a7b-474d-87d7-c520d53ce013.png)
   2. 完整讀取範例02SPO2_BPM.ino，將正確的心跳血氧值顯示再OLED上
-![image](https://user-images.githubusercontent.com/40359899/227778486-bc797a14-94e2-4692-a078-8dcda1f6f17d.png =800x600)
+![image](https://user-images.githubusercontent.com/40359899/227778486-bc797a14-94e2-4692-a078-8dcda1f6f17d.png)
 
 
