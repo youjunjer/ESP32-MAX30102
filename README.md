@@ -8,8 +8,13 @@
   5. 杜邦線、麵包版等
 
 # 血氧原理：利用帶氧血紅素吸收紅外光(850-1000nm)，未帶氧血紅素吸收紅光的特性(600-750nm)來計算血氧值
+
+![血氧](https://user-images.githubusercontent.com/40359899/233157219-b0be9a33-7c9a-40cd-9589-c095eb37384c.jpg)
+
+帶氧血紅素
 ![image](https://user-images.githubusercontent.com/40359899/227777815-6c28d550-bf01-4060-96fd-013dd674d93d.png)
 
+不同吸收率
 # 研習資料
   1. 研習講義：https://twgo.io/30102
   2. Blocklyduino血氧感測教學影片：https://www.youtube.com/watch?v=L2sBLHHKa8A
