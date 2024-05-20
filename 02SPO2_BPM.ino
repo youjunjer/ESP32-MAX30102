@@ -1,5 +1,7 @@
 //https://youtu.be/ghTtpUTSc4o
 //安裝程式庫及版本:1.Adafruit SSD1306(2.4.6版)、2.Adafruit GFX(1.10.12版)、3.MAX30105(不限)、4.ESP32Servo(不限版本)
+
+
 #include <Adafruit_GFX.h>    //OLED libraries
 #include <Adafruit_SSD1306.h> //OLED libraries
 #include "MAX30105.h"           //MAX3010x library
@@ -115,9 +117,9 @@ void loop() {
       if (beatAvg > 30) display.print(String(ESpO2) + "%");
       else display.print("---- %" );
       display.display();//顯示螢幕
-      tone(Tonepin, 1000);//發出聲音
-      delay(10);
-      noTone(Tonepin);//停止聲音
+      //tone(Tonepin, 1000);//發出聲音
+      //delay(10);
+      //noTone(Tonepin);//停止聲音
       //Serial.print("Bpm="); Serial.println(beatAvg);//將心跳顯示到序列
       long delta = millis() - lastBeat;//計算心跳差
       lastBeat = millis();
@@ -198,7 +200,7 @@ void loop() {
     display.setCursor(30, 35);
     display.println("Please");
     display.display();
-    noTone(Tonepin);
+    //noTone(Tonepin);
   }
 }
 
