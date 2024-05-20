@@ -1,12 +1,10 @@
 //https://youtu.be/ghTtpUTSc4o
 //安裝程式庫及版本:1.Adafruit SSD1306(2.4.6版)、2.Adafruit GFX(1.10.12版)、3.MAX30105(不限)、4.ESP32Servo(不限版本)
-//特別注意，檢查Adafruit BusIO的版本是否為1.7.5版本，否則編譯會出錯
-
 #include <Adafruit_GFX.h>    //OLED libraries
 #include <Adafruit_SSD1306.h> //OLED libraries
 #include "MAX30105.h"           //MAX3010x library
 #include "heartRate.h"          //Heart rate calculating algorithm
-#include "ESP32Servo.h"
+//#include "ESP32Servo.h"
 MAX30105 particleSensor;
 
 //計算心跳用變數
