@@ -24,13 +24,13 @@ double sumirrms = 0;
 double sumredrms = 0;
 
 double SpO2 = 0;
-double ESpO2 = 90.0;//初始值
+double ESpO2 = 60.0;//初始值
 double FSpO2 = 0.7; //filter factor for estimated SpO2
 double frate = 0.95; //low pass filter for IR/red LED value to eliminate AC component
 int i = 0;
 int Num = 30;//取樣30次才計算1次
 #define FINGER_ON 7000    //紅外線最小量（判斷手指有沒有上）
-#define MINIMUM_SPO2 90.0 //血氧最小量
+#define MINIMUM_SPO2 60.0 //血氧最小量
 
 //OLED設定
 #define SCREEN_WIDTH 128 //OLED寬度
@@ -152,7 +152,7 @@ void loop() {
 
       if ((i % Num) == 0) {
         double R = (sqrt(sumirrms) / aveir) / (sqrt(sumredrms) / avered);
-        SpO2 = -23.3 * (R - 0.4) + 100;
+        SpO2 = -23.3 * (R - 0.4) + 120;
         ESpO2 = FSpO2 * ESpO2 + (1.0 - FSpO2) * SpO2;//low pass filter
         if (ESpO2 <= MINIMUM_SPO2) ESpO2 = MINIMUM_SPO2; //indicator for finger detached
         if (ESpO2 > 100) ESpO2 = 99.9;
